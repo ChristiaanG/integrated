@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ce5c21361c6ca334d357b2c6e68d42f1",
+    "hash": "dccef574cd7221c47aa2035db2551fb7",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1241,17 +1241,17 @@
         },
         {
             "name": "integrated/content-bundle",
-            "version": "0.2.6",
+            "version": "dev-INTEGRATED-273-linkto-search-fails-with-",
             "target-dir": "Integrated/Bundle/ContentBundle",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "6e2e71e0b8cef6468ea67ba278381cddc07a5fbf"
+                "reference": "db08c1db2698d59ec137d696169a1559c0a1120d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/6e2e71e0b8cef6468ea67ba278381cddc07a5fbf.zip",
-                "reference": "6e2e71e0b8cef6468ea67ba278381cddc07a5fbf",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/db08c1db2698d59ec137d696169a1559c0a1120d.zip",
+                "reference": "db08c1db2698d59ec137d696169a1559c0a1120d",
                 "shasum": ""
             },
             "require": {
@@ -1264,12 +1264,15 @@
                 "integrated/formtype-bundle": "~0.1",
                 "integrated/library": "~0.1",
                 "integrated/locking-bundle": "~0.1",
-                "knplabs/knp-paginator-bundle": "dev-master",
+                "knplabs/knp-paginator-bundle": "~2.4",
                 "nelmio/alice": "1.*",
                 "php": ">=5.4",
                 "symfony/framework-bundle": "~2.2",
                 "symfony/symfony": "~2.4",
                 "twbs/bootstrap": "3.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2.*"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1298,7 +1301,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2014-10-23 15:06:50"
+            "time": "2015-03-19 09:34:59"
         },
         {
             "name": "integrated/formtype-bundle",
@@ -1356,16 +1359,16 @@
         },
         {
             "name": "integrated/library",
-            "version": "0.2.5",
+            "version": "0.2.9",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-library.git",
-                "reference": "2fa1394075b554b4ef81782312af824d6f71ae54"
+                "reference": "e1cb49c0363f14c8c282a1579bc819db954d53fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/2fa1394075b554b4ef81782312af824d6f71ae54.zip",
-                "reference": "2fa1394075b554b4ef81782312af824d6f71ae54",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/e1cb49c0363f14c8c282a1579bc819db954d53fa.zip",
+                "reference": "e1cb49c0363f14c8c282a1579bc819db954d53fa",
                 "shasum": ""
             },
             "require": {
@@ -1385,7 +1388,7 @@
                 "symfony/validator": "~2.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.2.*"
             },
             "type": "library",
             "extra": {
@@ -1401,6 +1404,7 @@
                     "Integrated\\MongoDB\\Solr\\": "src/",
                     "Integrated\\Common\\Content\\": "src/",
                     "Integrated\\Common\\ContentType\\": "src/",
+                    "Integrated\\Common\\Converter\\": "src/",
                     "Integrated\\Common\\Form\\": "src/",
                     "Integrated\\Common\\Locks\\": "src/",
                     "Integrated\\Common\\Queue\\": "src/",
@@ -1425,7 +1429,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2014-10-10 16:33:26"
+            "time": "2014-12-09 16:46:54"
         },
         {
             "name": "integrated/locking-bundle",
@@ -2795,10 +2799,24 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "0.2.*-dev",
+            "alias_normalized": "0.2.9999999.9999999-dev",
+            "version": "dev-INTEGRATED-273-linkto-search-fails-with-",
+            "package": "integrated/content-bundle"
+        }
+    ],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "symfony/symfony": 0,
+        "symfony/assetic-bundle": 0,
+        "symfony/swiftmailer-bundle": 0,
+        "symfony/monolog-bundle": 0,
+        "integrated/content-bundle": 20
+    },
     "prefer-stable": true,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.3"
     },

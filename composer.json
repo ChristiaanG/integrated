@@ -20,7 +20,7 @@
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
         "integrated/library": "~0.2",
-        "integrated/content-bundle": "~0.2",
+        "integrated/content-bundle": "dev-INTEGRATED-273-linkto-search-fails-with- as 0.2.*-dev",
         "integrated/formtype-bundle": "~0.2",
         "integrated/solr-bundle": "~0.2",
         "integrated/user-bundle": "~0.2",
