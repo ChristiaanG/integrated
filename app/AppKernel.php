@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new Vihuvac\Bundle\RecaptchaBundle\VihuvacRecaptchaBundle(),
 
             new Integrated\Bundle\ContentBundle\IntegratedContentBundle(),
+            new Integrated\Bundle\ContentHistoryBundle\IntegratedContentHistoryBundle(),
             new Integrated\Bundle\FormTypeBundle\IntegratedFormTypeBundle(),
             new Integrated\Bundle\SolrBundle\IntegratedSolrBundle(),
             new Integrated\Bundle\UserBundle\IntegratedUserBundle(),
